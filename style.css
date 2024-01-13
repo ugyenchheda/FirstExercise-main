@@ -5,6 +5,7 @@ body {
 #content {
     text-align: center;
     margin-top: 50px;
+    padding: 20px;
 }
 
 #actionButton {
@@ -12,4 +13,53 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    color: #2da6ec;
+    background: #fffefe;
+    border-color: #2da6ec;
+    transition: 0.5s ease;
+    border: 1px solid #959595;
+    border-radius: 5px;
+}
+
+#actionButton:hover {
+    color: #fff;
+    background: #2da6ec;
+    border-color: #2da6ec;
+    transition: 0.5s ease;
+    border: 1px solid #efefef;
+    border-radius: 0px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2da6ec;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+.inner-content {
+    min-height: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0e90cc;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
