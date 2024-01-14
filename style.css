@@ -1,5 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 #content {
@@ -13,8 +17,8 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    color: #2da6ec;
-    background: #fffefe;
+    color: #fff;
+    background: #2da6ec;
     border-color: #2da6ec;
     transition: 0.5s ease;
     border: 1px solid #959595;
@@ -23,8 +27,8 @@ body {
 
 #actionButton:hover {
     color: #fff;
-    background: #2da6ec;
-    border-color: #2da6ec;
+    background: #d87c03;
+    border-color: #d87c03;
     transition: 0.5s ease;
     border: 1px solid #efefef;
     border-radius: 0px;
@@ -41,13 +45,19 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #2da6ec;
-    padding: 10px;
 }
 
 nav a {
     margin: 0 15px;
+    padding: 10px;
     text-decoration: none;
+    transition: 0.3s ease-out;
     color: #f3f3f3;
+}
+nav a:hover {
+    color: #f3f3f3;
+    background: #d87c03;
+    transition: 0.3s ease-in;
 }
 
 .inner-content {
@@ -61,5 +71,5 @@ footer {
     color: white;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: -webkit-fill-available;
 }
